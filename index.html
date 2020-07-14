@@ -74,9 +74,53 @@
       <!-- <a class="p-2 text-muted" href="personal account.html">Peek into our crazy</a>
     </nav>
   </div> -->
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Mods Only</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="develop.html"  method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required/>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required/>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"/> Remember me
+      </label>
+    </div>
+  
+        <div class="clearfix">
+          <button type="submit" class="loginbtn">Login</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn">Cancel</button>
+      </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
   
   <div class="topnav">
-  <a class="active" href="index.html">Home</a>
+  <!-- <a class="active" href="index.html">Home</a> -->
   <a href="finance.html">Finance</a>
   <a href="CS.html">Computers</a>
   <a href="opinion.html">Your views</a>
@@ -145,7 +189,6 @@
         <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
         <hr>
 
-
         <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
         <!-- <a href="#" class="text-black font-weight-bold more-link" data-markup-id="continue-reading-more-link" onclick="$('article').readmore();">Continue...</a> -->
         <details>
@@ -177,7 +220,9 @@
         </ol>
         <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
         </details>
-      </div><!-- /.blog-post -->
+      </div>
+      <hr>
+      <!-- /.blog-post -->
       <!-- <div class="blog-post">
         <h2 class="blog-post-title">Another blog post</h2>
         <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
@@ -192,7 +237,7 @@
 
       <div class="blog-post">
         <h2 class="blog-post-title">Coming Soon</h2>
-        <p class="blog-post-meta">June 14, 2020 by <a href="#">Cat next door</a></p>
+        <p class="blog-post-meta">June 14, 2020 by <a href="#">Cat next door(or Dogs because they are bae)</a></p>
 
         <p>We're still trying out weird ideas and methods to make this site work with the utmost perfection. We would never admit, but we really expected ourselves to be done with this blog in a few days. There was a point where the creators of this blog thought we would be done with the entire thing in 5 days ! How silly of us.</p>
         <!-- <ul>
@@ -227,7 +272,8 @@
       <div class="p-4">
         <h4 class="font-italic">Connect with us!</h4>
         <ol class="list-unstyled">
-          <li><a href="https://github.com/asdfghjk0416">GitHub</a></li>
+          <li><a href="https://github.com/asdfghjk0416">GitHub-Mod1</a></li>
+          <li><a href="https://github.com/Luckyfox1111">GitHub-Mod2</a></li>
           <!-- <li> <a href="#">Instagram</a></li>
           <li><a href="#">Twitter</a></li> -->
         </ol>
@@ -253,6 +299,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Readmore.js/2.2.1/readmore.min.js"></script>
 <script src="/node_modules/readmore-js/readmore.min.js"></script>
-<script src="script.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
