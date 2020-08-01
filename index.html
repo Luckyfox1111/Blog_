@@ -81,7 +81,7 @@
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="develop.html"  method="post">
+<div class="modal-content">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
@@ -89,10 +89,10 @@
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required/>
+      <input type="text" placeholder="Enter Username" id="uname" required/>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required/>
+      <input type="password" placeholder="Enter Password" id="psw" required/>
 
       <label>
         <input type="checkbox" checked="checked" name="remember"/> Remember me
@@ -100,10 +100,10 @@
     </div>
   
         <div class="clearfix">
-          <button type="submit" class="loginbtn">Login</button>
+          <button type="submit" class="loginbtn" onclick="check();">Login</button>
       <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="cancelbtn">Cancel</button>
       </div>
-  </form>
+</div>
 </div>
 
 <script>
@@ -236,9 +236,9 @@ window.onclick = function(event) {
       </div>/.blog-post -->
 
       <div class="blog-post">
-        <h2 class="blog-post-title">Coming Soon</h2>
+        <h2 class="blog-post-title" id="t1">Coming Soon</h2>
         <p class="blog-post-meta">June 14, 2020 by <a href="#">Cat next door(or Dogs because they are bae)</a></p>
-
+        <div id="write">
         <p>We're still trying out weird ideas and methods to make this site work with the utmost perfection. We would never admit, but we really expected ourselves to be done with this blog in a few days. There was a point where the creators of this blog thought we would be done with the entire thing in 5 days ! How silly of us.</p>
         <!-- <ul>
           <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
@@ -247,6 +247,7 @@ window.onclick = function(event) {
         </ul> -->
         <p>Turns out we have a lot to learn. Like rest of the 7.7 billion people on this planet. Nevertheless, we'll be coming out with some really good content soon! <em>(nervous sighs)</em> </p>
         <p>We'll be putting up something sooner than we expect ourselves to do it ! </p>
+        </div>
       </div><!-- /.blog-post -->
 
       <!-- <nav class="blog-pagination">

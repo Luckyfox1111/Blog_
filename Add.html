@@ -58,13 +58,13 @@
 			</div>
 		</header>
 		<h1>Add a new post!</h1>
-		<form>
+		<form action="index.html" method="POST">
 			<fieldset>
 				<legend>Text input</legend>
 				<p>
 					<label>Title</label>
           <input type = "text"
-                 id = "myText"/>
+                 id = "title"/>
         </p>
         <p>
           <label>Author</label>
@@ -73,11 +73,23 @@
         </p>
         <p>
           <label>Start typing !</label>
-          <textarea id = "myTextArea"
+          <textarea id = "text"
                   rows = "100"
-                  cols = "150">Your text here</textarea>
+                  cols = "200">Your text here</textarea>
         </p>
+        <div class="option">
+        <select id="choose">
+          <input type="radio" name="choose"value="Personal"/> Personal
+          <input type="radio" name="choose" value="Finance"/>
+          Finance
+          <input type="radio" name="choose" value="Computer"/> Computer
+          <input type="radio" name="choose" value="Views"/>
+          Views
+        </select>
+        <button type="submit" onclick="post()"> Post</button>
+        </div>
       </fieldset>
+      
     </form>
     
 
